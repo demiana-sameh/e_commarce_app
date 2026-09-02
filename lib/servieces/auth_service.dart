@@ -40,4 +40,13 @@ class AuthService {
       },
     );
   }
+  // Forgot Password
+  static Future<void> forgotPassword(String email) async {
+    await ApiServices.dio.post(
+      '/api/auth/forgot-password',
+      data: {
+        'email': email,
+      },
+    );
+  }
 }
