@@ -1,3 +1,4 @@
+import 'package:e_commarce_app/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'servieces/auth_service.dart';
 
@@ -109,9 +110,8 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
       body: SafeArea(
         child: Stack(
           children: [
-
-            //=========================
-            //الصوره فى الخلف
+            // =========================
+            // الصورة في الخلف تمامًا
             // =========================
             Positioned.fill(
               child: Image.asset(
@@ -363,15 +363,38 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                     const SizedBox(height: 20),
 
                     // Facebook
-                    Center(
-                      child: TextButton(
+                    SizedBox(
+                      width: double.infinity,
+                      height: 60,
+                      child: ElevatedButton(
                         onPressed: () {},
-                        child: const Text(
-                          'Sign up with Facebook',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: AppColors.dark,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(35),
                           ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'f',
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(width: 20),
+                            Text(
+                              'Log in with Facebook',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
