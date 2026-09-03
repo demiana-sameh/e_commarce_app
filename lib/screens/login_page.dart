@@ -253,6 +253,42 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 35),
                     //Facebook----------------------------------
                     //ممكن نضيفها ك button بس
+                    SizedBox(
+                      width: double.infinity,
+                      height: 60,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: AppColors.dark,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(35),
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'f',
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(width: 20),
+                            Text(
+                              'Log in with Facebook',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
                     //Sign Up------------------------------------------------------------
                     Center(
                       child: Row(
@@ -263,16 +299,19 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(color: Colors.white, fontSize: 15),
                           ),
                           GestureDetector(
-                            onTap:() {
+                            onTap: () {
                               //هنفتح ال Register Scrren
                             },
-                            child: Text('Sign Up',style: TextStyle(
-                            color: Colors.white,
-                              fontSize: 15,
-                              decoration: TextDecoration.underline,
-                              decorationColor: Colors.white
-                          ),),
-                          )
+                            child: Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                decoration: TextDecoration.underline,
+                                decorationColor: Colors.white,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -283,8 +322,6 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ],
       ),
-
-      //Login Content
     );
   }
 }
