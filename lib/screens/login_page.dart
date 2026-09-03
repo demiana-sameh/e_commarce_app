@@ -253,35 +253,35 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 35),
                     //Facebook----------------------------------
                     //ممكن نضيفها ك button بس
-                    SizedBox(
-                      width: double.infinity,
-                      height: 60,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: AppColors.dark,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(35),
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'f',
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            SizedBox(width: 20),
-                            Text(
-                              'Log in with Facebook',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
+        SizedBox(
+    width: double.infinity,
+    height: 60,
+    child: ElevatedButton(
+    onPressed: () {},
+    style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.white,
+    foregroundColor: AppColors.dark,
+    shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(35),
+    ),
+    ),
+    child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+    Text(
+    'f',
+    style: TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    ),
+    ),
+    SizedBox(width: 20),
+    Text(
+    'Log in with Facebook',
+         style: TextStyle(
+         fontSize: 18,
+         fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
